@@ -11,7 +11,7 @@ public class Main {
             PersonController controller = new PersonController(person);
             controller.writeToFile();
             view.displayMessage("Данные успешно записаны в файл.");
-        } catch (InvalidDataFormatException | IOException e) {
+        } catch (InvalidDataFormatException e) {
             view.displayException(e);
         }
     }
